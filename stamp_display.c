@@ -154,15 +154,15 @@ void read_port() {
 		state=STATE_WANT_Y;
 	 	break;
 	 case STATE_WANT_Y:
-		move(newx,c);
+		move(c,newx);
 		state=STATE_IDLE;
 	 	break;
 	 case STATE_WANT_X1:
-		move(c,row);
+		move(row,c);
 		state=STATE_IDLE;
 	 	break;
 	 case STATE_WANT_Y1:
-		move(col,c);
+		move(c,col);
 		state=STATE_IDLE;
 	 	break;
 	 case STATE_IDLE:
